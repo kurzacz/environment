@@ -8,3 +8,7 @@ Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system
 call plug#end()
+
+" Use the syntax colors for Python
+set termguicolors	" Truecolor support
+colorscheme asmox-gruvbox
