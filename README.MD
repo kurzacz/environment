@@ -23,3 +23,13 @@ ln -s nvim/colors/asmox-gruvbox.vim ~/.config/nvim/colors/asmox-gruvbox.vim
 ln -s nvim/syntax/python.vim ~/.config/nvim/syntax/python.vim
 ```
 
+### Python auto-completion
+Need to install deoplete + deoplete-jedi.
+It's better to have a dedicated venv for neovim. Then install:
+```
+(venv) $ pip install pynvim
+(venv) $ pip install jedi
+(venv) $ pip install neovim
+```
+
+And then adjust path to your neovim in `.vimrc` file.
