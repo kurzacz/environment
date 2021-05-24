@@ -30,7 +30,7 @@ hi Boolean         guifg=#AE81FF
 hi Comment         guifg=#5c7176
 hi Character       guifg=#E6DB74
 hi Number          guifg=#AE81FF
-hi String          guifg=#E6DB74
+hi String          guifg=#83A598
 hi Conditional     guifg=#F92672               gui=bold
 hi Constant        guifg=#AE81FF               gui=bold
 hi Debug           guifg=#BCA3A3               gui=bold

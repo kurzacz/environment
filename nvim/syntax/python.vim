@@ -119,22 +119,16 @@ syn match pythonClassParameters "[^,]*" contained contains=pythonBuiltin,pythonB
 
 
 
+" Python comments
 syn match   pythonComment	"#.*$" contains=pythonTodo,@Spell
-syn keyword pythonTodo		FIXME NOTE NOTES TODO XXX contained
+" Highlight docstrings as comments, not string.
+syn region pythonDocstring  start=+^\s*[uU]\?[rR]\?"""+ end=+"""+ keepend excludenl contains=pythonEscape,@Spell,pythonDoctest,pythonDocTest2,pythonSpaceError
+syn region pythonDocstring  start=+^\s*[uU]\?[rR]\?'''+ end=+'''+ keepend excludenl contains=pythonEscape,@Spell,pythonDoctest,pythonDocTest2,pythonSpaceError
 
-" Triple-quoted strings can contain doctests.
-syn region  pythonString
-      \ start=+[uU]\=\z(['"]\)+ end="\z1" skip="\\\\\|\\\z1"
-      \ contains=pythonEscape,@Spell
-syn region  pythonString
-      \ start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
-      \ contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell
-syn region  pythonRawString
-      \ start=+[uU]\=[rR]\z(['"]\)+ end="\z1" skip="\\\\\|\\\z1"
-      \ contains=@Spell
-syn region  pythonRawString
-      \ start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
-      \ contains=pythonSpaceError,pythonDoctest,@Spell
+hi def link pythonDocstring pythonComment
+
+
+syn keyword pythonTodo		FIXME NOTE NOTES TODO XXX contained
 
 syn match   pythonEscape	+\\[abfnrtv'"\\]+ contained
 syn match   pythonEscape	"\\\o\{1,3}" contained
