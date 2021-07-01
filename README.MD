@@ -1,5 +1,12 @@
 # Configurations
 
+## .bashrc
+`.bashrc file lives in home directory`
+```
+cd ~
+ln -s ./Configurations/.bashrc .bashrc
+```
+
 ## Tmux
 `.tmux.conf` file lives in home directory.
 ```
