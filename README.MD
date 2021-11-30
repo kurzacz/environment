@@ -26,8 +26,8 @@ Configuration files needs to be added to `~/.config/nvim` directory:
 mkdir ~/.config/nvim/colors
 mkdir ~/.config/nvim/syntax
 
-ln -s nvim/colors/asmox-gruvbox.vim ~/.config/nvim/colors/asmox-gruvbox.vim
-ln -s nvim/syntax/python.vim ~/.config/nvim/syntax/python.vim
+ln -s ~/Configrations/nvim/colors/asmox-gruvbox.vim ~/.config/nvim/colors/asmox-gruvbox.vim
+ln -s ~/Configrations/nvim/syntax/python.vim ~/.config/nvim/syntax/python.vim
 ```
 
 ### Python auto-completion
