@@ -3,7 +3,6 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" Plugin: vim-gitgutter
 Plug 'airblade/vim-gitgutter'
 
 " Plugin: deoplete-jedi
@@ -26,3 +25,7 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+let g:gitgutter_enabled = 1
+set updatetime=1000
+
