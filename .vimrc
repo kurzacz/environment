@@ -16,15 +16,17 @@ call plug#end()
 set termguicolors	" Truecolor support
 colorscheme asmox-gruvbox
 
-" Set tab to 4 spaces
+" Set tab to 2 spaces
 " -------------------
 filetype plugin indent on
+" On pressing tab, do not insert spaces
+" Note: it doesn't work for all file types, but for YAML it's okay because it
+" requries spaces
+set noexpandtab
 " show existing tab with 4 spaces width
-set tabstop=4
+set tabstop=2
 " when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
+set shiftwidth=2
 
 let g:gitgutter_enabled = 1
 set updatetime=1000
