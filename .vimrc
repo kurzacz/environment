@@ -9,6 +9,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'zchee/deoplete-jedi'
 let g:python3_host_prog = '/home/kkurzacz/.pyenv/shims/python3'
 
+" Plugin: indentLine, primarily for YAML files
+Plug 'Yggdroot/indentLine'
+
 " Initialize plugin system
 call plug#end()
 
