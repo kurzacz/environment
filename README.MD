@@ -24,6 +24,12 @@ ln -s ~/Configrations/nvim/colors/asmox-gruvbox.vim ~/.config/nvim/colors/asmox-
 ln -s ~/Configrations/nvim/syntax/python.vim ~/.config/nvim/syntax/python.vim
 ```
 
+Install vim-plug ([source](https://github.com/junegunn/vim-plug#unix-linux))
+```
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
 ### Python auto-completion
 Need to install deoplete + deoplete-jedi.
 It's better to have a dedicated venv for neovim. Then install:
