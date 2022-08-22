@@ -9,8 +9,13 @@ Plug 'airblade/vim-gitgutter'
 Plug 'zchee/deoplete-jedi'
 let g:python3_host_prog = '/home/kkurzacz/.pyenv/shims/python3'
 
+" # Yaml Plugins
+
 " Plugin: indentLine, primarily for YAML files
 Plug 'Yggdroot/indentLine'
+
+" Plugin: Yaml revealer, displays yaml paths
+Plug 'Einenlum/yaml-revealer'
 
 " Initialize plugin system
 call plug#end()
