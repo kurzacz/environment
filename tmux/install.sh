@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ln -s "$(pwd)/.tmux.conf" ${HOME}/.tmux.conf
+ln -sf "$(pwd)/.tmux.conf" ${HOME}/.tmux.conf
+
