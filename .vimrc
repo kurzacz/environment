@@ -17,6 +17,9 @@ Plug 'Yggdroot/indentLine'
 " Plugin: Yaml revealer, displays yaml paths
 Plug 'Einenlum/yaml-revealer'
 
+" Improves Yaml folding
+Plug 'pedrohdz/vim-yaml-folds'
+
 " Initialize plugin system
 call plug#end()
 
