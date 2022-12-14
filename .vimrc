@@ -1,3 +1,6 @@
+" Plugins section
+" ===============
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
@@ -9,7 +12,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'zchee/deoplete-jedi'
 let g:python3_host_prog = '/home/kkurzacz/.pyenv/shims/python3'
 
-" # Yaml Plugins
+" Yaml Plugins
+" ------------
 
 " Plugin: indentLine, primarily for YAML files
 Plug 'Yggdroot/indentLine'
@@ -23,9 +27,18 @@ Plug 'pedrohdz/vim-yaml-folds'
 " Initialize plugin system
 call plug#end()
 
+" Miscellaneous settings
+" ======================
+
 " Use the syntax colors for Python
 set termguicolors	" Truecolor support
 colorscheme asmox-gruvbox
+
+set nofoldenable	" ---------------------------- Disable folding by default
+
+" Git gutter
+let g:gitgutter_enabled = 1
+set updatetime=1000
 
 " Set tab to 2 spaces
 " -------------------
@@ -38,7 +51,4 @@ set noexpandtab
 set tabstop=2
 " when indenting with '>', use 4 spaces width
 set shiftwidth=2
-
-let g:gitgutter_enabled = 1
-set updatetime=1000
 
